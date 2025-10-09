@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "discord.js": "^14.23.2",
-    "esm": "^3.2.25"
+    "dotenv": "^17.2.3",
+    "esm": "^3.2.25",
+    "node-schedule": "^2.1.1"
   }
 }
