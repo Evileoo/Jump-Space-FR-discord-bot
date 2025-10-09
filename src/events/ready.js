@@ -1,4 +1,5 @@
 import { Events } from 'discord.js';
+import schedule from 'node-schedule';
 
 // Executed when bot is ready
 export const event = {
@@ -8,8 +9,26 @@ export const event = {
         // Bot is ready message
         console.log(`Ready! Logged in as ${client.user.tag}`);
 
-        // TODO boucle pour changer l'activité
-        client.user.setActivity("Répare la machine à pizzas");
+        // On change l'activité toutes les heures
+        schedule.scheduleJob("activity", '0 0 0-23 * * *', async function() {
+
+            const activities = [
+                "Fait des pizzas",
+                "Transfère le loot au vaisseau",
+                "Attend que le vaisseau parte",
+                "Tire au railgun",
+                "Remet des munitions",
+                "Cherche à regonfler le ballon du hangar",
+                "Répare la machine à pizzas", 
+                "Récupère la materia",
+                "Extermine les robots"
+            ];
+
+            const activity = Math.floor(Math.random() * activities.length);
+
+            client.user.setActivity(activities[activity]);
+        });
+
         client.user.setStatus("online");
 
         // TODO boucle pour récupérer les datas des membres (faire une fonction)
