@@ -4,9 +4,9 @@ Lien d'invitation: https://discord.gg/M2XgfsMhJX
 
 ## Fonctionnalités actuelles
 
-- aucune
+- Pizza !
+- Messages d'arrivée et de départ des membres
 
 ## A venir
 
-- Messages d'arrivée et de départ des membres
 - Compteurs de membres ayant tel ou tel role

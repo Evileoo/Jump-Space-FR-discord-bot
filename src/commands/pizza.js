@@ -7,7 +7,6 @@ export const command = {
     , async execute(interaction){
 
         const isPizzaiolo = interaction.member.roles.cache.some(r => r.name == 'pizzaiolo');
-        console.log(isPizzaiolo);
         
         if(isPizzaiolo) {
             interaction.reply({
