@@ -7,7 +7,6 @@ export const event = {
 
         console.log(member);
         console.log(member.user.id);
-        console.log(member.user.primaryGuild.tag);
         
         const joinMessages = [
             `Un atiran a été retrouvé, bon retour parmis nous <@${member.user.id}>`,
@@ -24,6 +23,7 @@ export const event = {
         let joinMessage;
 
         if(Object.hasOwn(member.user, "primaryGuild")) {
+            console.log(member.user.primaryGuild.tag);
             switch(member.user.primaryGuild.tag) {
                 case "HDFR":
                     joinMessage = `Le ministère de la super vérité approuve l'enrôlement de <@${member.user.id}> par la coalition ! Merci pour ton aide Helldiver !`;

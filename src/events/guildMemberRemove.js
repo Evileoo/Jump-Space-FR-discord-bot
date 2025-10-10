@@ -7,7 +7,6 @@ export const event = {
 
         console.log(member);
         console.log(member.user.id);
-        console.log(member.user.primaryGuild.tag);
         
         const leaveMessages = [
             `${member.user.tag} a été intoxiqué par une pizza à l'ananas`,
@@ -19,6 +18,7 @@ export const event = {
         let leaveMessage;
 
         if(Object.hasOwn(member.user, "primaryGuild")) {
+            console.log(member.user.primaryGuild.tag);
             switch(member.user.primaryGuild.tag) {
                 case "HDFR":
                     leaveMessage = `${member.user.tag} a été rappelé par la super Terre, merci pour son aide dans le combat contre les sentinelles`;
