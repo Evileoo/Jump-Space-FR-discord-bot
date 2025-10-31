@@ -16,7 +16,20 @@ export const event = {
             `Le vaisseau de <@${member.user.id}> est bien ammoché, laisse-nous le réparer et installe-toi ici`,
             `On m'a dit que <@${member.user.id}> était un excellent cuisinier, on espère qu'il saura faire autre chose que des pizzas à l'ananas`,
             `<@${member.user.id}> a été retrouvé en train de dormir dans le vide de l'espace ! Ca c'est une sieste épique`,
-            `Un nouvel atiran est prêt à rejoindre la coalition, bienvenue <@${member.user.id}> !`
+            `Un nouvel atiran est prêt à rejoindre la coalition, bienvenue <@${member.user.id}> !`,
+            `<@${member.user.id}> est venu aider Bozze a réparer le ballon`,
+            `<@${member.user.id}> est le dernier Space Marine nous ayant rejoint. Attends... mauvais univers... bienvenue quand même`,
+            `<@${member.user.id}> est venu jouer au sabre laser avec une clé à molette, que la force soit avec toi`,
+            `Que tout le monde dise bonjour à <@${member.user.id}>`,
+            `Un corsaire de l'espace vient d'atterrir, bienvenue <@${member.user.id}>`,
+            `Le dernier modèle de Terminator vient d'arriver, salutations <@${member.user.id}>`,
+            `<@${member.user.id}> est venu vérifier la qualité des ingrédients des pizzaiolos (faites que l'ananas soit de mauvaise qualité :pray:)`,
+            `<@${member.user.id}> a fait un atterrissage de super héros, quelle classe`,
+            `<@${member.user.id}> vient nous vendre des ananas, on en a trop mais on prend quand même`,
+            `<@${member.user.id}> est venu pour protéger Nisse, il ne pourra plus être démantelé`,
+            `Âllo <@${member.user.id}> ? Ouais c'est Greg`,
+            `Âllo <@${member.user.id}> ? Ouais c'est le fils de Greg`,
+            `Un ptit verre <@${member.user.id}> ?`
         ];
 
         let joinMessage;
