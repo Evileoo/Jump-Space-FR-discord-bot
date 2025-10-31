@@ -6,7 +6,6 @@ export const event = {
     async execute(member){
 
         console.log(member);
-        console.log(member.user.id);
         
         const joinMessages = [
             `Un atiran a été retrouvé, bon retour parmis nous <@${member.user.id}>`,

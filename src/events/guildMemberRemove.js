@@ -6,7 +6,6 @@ export const event = {
     async execute(member){
 
         console.log(member);
-        console.log(member.user.id);
         
         const leaveMessages = [
             `${member.user.tag} a été intoxiqué par une pizza à l'ananas`,
