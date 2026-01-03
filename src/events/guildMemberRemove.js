@@ -22,23 +22,7 @@ export const event = {
             `${member.user.tag} n'a pas aimé la cuisine, faites un effort les pizzaiolos !`
         ];
 
-        let leaveMessage;
-
-        if(Object.hasOwn(member.user, "primaryGuild")) {
-            console.log(member.user.primaryGuild.tag);
-            switch(member.user.primaryGuild.tag) {
-                case "HDFR":
-                    leaveMessage = `${member.user.tag} a été rappelé par la super Terre, merci pour son aide dans le combat contre les sentinelles`;
-                    break;
-                case "AHOY":
-                    leaveMessage = `${member.user.tag} est retourné sur les océans, c'est sûrement plus agréable d'avoir les pieds sur terre, enfin... sur mer`;
-                    break;
-                default:
-                    leaveMessage = leaveMessages[Math.floor(Math.random() * leaveMessages.length)];
-            }
-        } else {
-            leaveMessage = leaveMessages[Math.floor(Math.random() * leaveMessages.length)];
-        }
+        const leaveMessage = leaveMessages[Math.floor(Math.random() * joinMessages.length)];
 
         const guild = member.guild;
         const channel = await guild.channels.fetch('1418863969145192521');
